@@ -7,7 +7,7 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
 
 const app = express()
 // middleware\
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(cors());
 
 const port = 5000;
