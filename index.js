@@ -11,9 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 const port = 5000;
-app.get('/', (req, res) => {
-  res.send("Hello ! This is Port 5000 and developed for ema john simple server")
-})
+
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 client.connect(err => {
@@ -61,6 +59,9 @@ client.connect(err => {
       .toArray((err, documents) => {
         res.send(documents)
       })
+  })
+  app.get('/', (req, res) => {
+    res.send("Hello ! This is Port 5000 and developed for ema john simple server")
   })
 
 });
