@@ -9,9 +9,6 @@
   },
   "author": "albi",
   "license": "ISC",
-  "devDependencies": {
-   
-  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "node-emv": "^1.0.22",
